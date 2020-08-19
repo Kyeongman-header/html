@@ -3,19 +3,17 @@
 <head>
 <title>javascript</title>
 <meta charset = "utf-8">
+<script src="colors.js"> </script> 
 <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
 <h1><a href="homepage.html" target="_blank" title="WEB">WEB</a></h1>
-<input type="button" value="night" onclick="
-document.querySelector('body').style.backgroundColor='black';
-document.querySelector('body').style.color='white';
+<input id="night_day" type="button" value="night" onclick="
+nightDayHandler(this);
 ">
-<input type="button" value="day" onclick="
-document.querySelector('body').style.backgroundColor='white';
-document.querySelector('body').style.color='black';
-">
+
 <h2>Java script</h2>
 
 <div id="grid">
