@@ -45,9 +45,9 @@ fetchPage('welcome.txt');
 fetch("list.txt").then(function(response){
 response.text().then(function(text)
 {
-var items=text.split(,);
+var items=text.split(',');
 var i=0;
-var tags=' ';
+var tags='';
 while(i<items.length)
 {
 var item=items[i];
