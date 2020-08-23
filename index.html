@@ -34,7 +34,7 @@ nightDayHandler(this);
 
 <script>
 function fetchPage(name){
-fetch(name).then(function(response){
+fetch(name.txt).then(function(response){
 response.text().then(function(text)
 {
 document.querySelector('#article').innerHTML=text;
