@@ -14,7 +14,7 @@ function fetchPage(name){
 fetch(name).then(function(response){
 response.text().then(function(text)
 {
-document.querySelector('article').innerHTML=text;
+document.querySelector("article").innerHTML=text;
 })
 });
 }
@@ -24,6 +24,10 @@ document.querySelector('article').innerHTML=text;
 nightDayHandler(this);
 ">
 <!--<img src="photo-1597287258599-e40e79c5d204.jfif" width="25%"> -->
+<article>
+
+</article>
+
 <div id="grid">
 <ol>
 	<li><a href="#!html" onclick ="fetch('html.txt')">html</a></li>
