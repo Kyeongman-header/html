@@ -9,6 +9,16 @@
 </head>
 
 <body>
+<script>
+function fetchPage(name){
+fetch(name).then(function(response){
+response.text().then(function(text)
+{
+document.querySelector('article').innerHTML=text;
+})
+});
+}
+</script>
 <h1><a href="#!welcome" onclick = "fetch('welcome.txt')">WEB</a></h1>
 <input id="night_day" type="button" value="night" onclick="
 nightDayHandler(this);
@@ -32,16 +42,7 @@ nightDayHandler(this);
 
 </ol>
 
-<script>
-function fetchPage(name){
-fetch(name).then(function(response){
-response.text().then(function(text)
-{
-document.querySelector("#grid article").innerHTML=text;
-})
-});
-}
-</script>
+
 
 <article>
 
