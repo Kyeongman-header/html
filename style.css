@@ -38,7 +38,7 @@ grid-template-columns:150px 1fr;
 #grid  ol{
 padding-left:33px;
 }
-#grid .article{
+#grid article{
 padding-left:25px;
 }
 @media(max-width:800px)
