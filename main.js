@@ -34,7 +34,7 @@ fs.readFile(`data/${queryData.id}`+'.txt','utf8',function(err,description){
     </html>
     `;
     response.end(template);
-console.log(err);
+
 });
 
 });
