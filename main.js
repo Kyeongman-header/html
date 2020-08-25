@@ -13,7 +13,7 @@ var app = http.createServer(function(request,response){
       return response.writeHead(404);
     }
     response.writeHead(200);
-fs.readFile('/data/${queryData.id}.html','utf8',function(err,description){   
+fs.readFile(`data/${queryData.id}`+'.txt','utf8',function(err,description){   
  var template = `
     <!doctype html>
     <html>
@@ -34,7 +34,7 @@ fs.readFile('/data/${queryData.id}.html','utf8',function(err,description){
     </html>
     `;
     response.end(template);
-console.log(description);
+console.log(err);
 });
 
 });
