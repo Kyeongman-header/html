@@ -92,9 +92,10 @@ var post=qs.parse(body);
 title=post.title;
 description=post.description;
 fs.writeFile(`data/${title}`,description,'utf8',function(err){
+//현재로선 에러 처리를 고려할 필요가 없다.
+})
 response.writeHead(302,{Location: `/?id=${title}`});
 response.end();
-})
 });
 
 }
